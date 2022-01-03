@@ -11,11 +11,21 @@ from mcstatus import MinecraftServer
 
 import matplotlib.pyplot as plt
 
-def line_plot(numbers):
-    plt.plot(numbers)
-    plt.ylabel('Random numbers')
-    plt.show()
+class grapher(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
 
-if __name__ == '__main__':
-    numbers = [2, 4, 1, 6]
-    line_plot(numbers)
+    def line_plot(numbers):
+        plt.plot(numbers)
+        plt.ylabel('Random numbers')
+        plt.show()
+
+        if __name__ == '__main__':
+            numbers = [2, 4, 1, 6]
+            line_plot(numbers)
+
+    def serialize(self):
+        return {}
+
+def setup(bot):
+    bot.add_cog(grapher(bot))
