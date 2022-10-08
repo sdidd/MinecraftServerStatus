@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 class grapher(commands.Cog):
     
     @commands.command()
-    async def line_plot()
+    async def line_plot():
         # this sets up the Matplotlib interactive windows:
         %matplotlib widget
 
