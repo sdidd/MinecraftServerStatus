@@ -55,7 +55,7 @@ class grapher(commands.Cog):
 
         ax0.set_title('Observations: Dinosaur, Colorado', loc='left')
         ax0.text(0.03, 0.03, 'https://www.ncei.noaa.gov/pub/data/uscrn/products/hourly02/', 
-                 fontsize='small', fontstyle='italic', transform=ax0.transAxes);
+                 fontsize='small', fontstyle='italic', transform=ax0.transAxes)
 
     def __init__(self, bot):
             self.bot = bot
