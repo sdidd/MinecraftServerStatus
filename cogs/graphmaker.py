@@ -59,7 +59,6 @@ class grapher(commands.Cog):
 
     def __init__(self, bot):
             self.bot = bot
-
         def serialize(self):
             return {}
 
