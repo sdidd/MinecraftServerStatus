@@ -19,7 +19,7 @@ class grapher(commands.Cog):
     @commands.command()
     async def line_plot():
         # this sets up the Matplotlib interactive windows:
-        %matplotlib widget
+        %matplotlib
 
         # this changes the default date converter for better interactive plotting of dates:
         plt.rcParams['date.converter'] = 'concise'
